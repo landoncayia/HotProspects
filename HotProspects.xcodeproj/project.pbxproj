@@ -15,6 +15,7 @@
 		C78A61B028CF9BC800809B72 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C78A61AE28CF9BC800809B72 /* .gitignore */; };
 		C78A61B228CF9CBD00809B72 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A61B128CF9CBD00809B72 /* ProspectsView.swift */; };
 		C78A61B428CF9CC200809B72 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A61B328CF9CC200809B72 /* MeView.swift */; };
+		C78A61B628CF9FAB00809B72 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A61B528CF9FAB00809B72 /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C78A61AE28CF9BC800809B72 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C78A61B128CF9CBD00809B72 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		C78A61B328CF9CC200809B72 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		C78A61B528CF9FAB00809B72 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				C766A8E828CA789D00D88927 /* HotProspectsApp.swift */,
 				C766A8EA28CA789D00D88927 /* ContentView.swift */,
+				C78A61B528CF9FAB00809B72 /* Prospect.swift */,
 				C78A61B128CF9CBD00809B72 /* ProspectsView.swift */,
 				C78A61B328CF9CC200809B72 /* MeView.swift */,
 				C766A8EC28CA789E00D88927 /* Assets.xcassets */,
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78A61B428CF9CC200809B72 /* MeView.swift in Sources */,
+				C78A61B628CF9FAB00809B72 /* Prospect.swift in Sources */,
 				C78A61B228CF9CBD00809B72 /* ProspectsView.swift in Sources */,
 				C766A8EB28CA789D00D88927 /* ContentView.swift in Sources */,
 				C766A8E928CA789D00D88927 /* HotProspectsApp.swift in Sources */,
