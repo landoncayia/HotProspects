@@ -10,6 +10,10 @@ import SwiftUI
 import UserNotifications
 
 struct ProspectsView: View {
+    enum SortingMethod {
+        case name, mostRecent
+    }
+    
     enum FilterType {
         case none, contacted, uncontacted
     }
@@ -17,6 +21,7 @@ struct ProspectsView: View {
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
     @State private var isShowingSortingSheet = false
+    @State private var sortedBy = SortingMethod.mostRecent
     let filter: FilterType
     
     var body: some View {
@@ -99,8 +104,8 @@ struct ProspectsView: View {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "John Appleseed\njohn.appleseed@icloud.com", completion: handleScan)
             }
             .confirmationDialog("Select a sorting method", isPresented: $isShowingSortingSheet) {
-                Button("By Name") { }
-                Button("By Most Recent") { }
+                Button("By Name") { sortedBy = .name }
+                Button("By Most Recent") { sortedBy = .mostRecent }
             }
         }
     }
@@ -117,13 +122,19 @@ struct ProspectsView: View {
     }
     
     var filteredProspects: [Prospect] {
-        switch filter {
-        case .none:
-            return prospects.people
-        case .contacted:
-            return prospects.people.filter { $0.isContacted }
-        case .uncontacted:
-            return prospects.people.filter { !$0.isContacted }
+        switch (filter, sortedBy) {
+        case (.none, .name):
+            return prospects.people.sorted(by: { $0.name < $1.name })
+        case (.none, .mostRecent):
+            return prospects.people.sorted(by: { $0.timeAdded > $1.timeAdded })
+        case (.contacted, .name):
+            return prospects.people.filter { $0.isContacted }.sorted(by: { $0.name < $1.name })
+        case (.contacted, .mostRecent):
+            return prospects.people.filter { $0.isContacted }.sorted(by: { $0.timeAdded > $1.timeAdded })
+        case (.uncontacted, .name):
+            return prospects.people.filter { !$0.isContacted }.sorted(by: { $0.name < $1.name })
+        case (.uncontacted, .mostRecent):
+            return prospects.people.filter { !$0.isContacted }.sorted(by: { $0.timeAdded > $1.timeAdded })
         }
     }
     
