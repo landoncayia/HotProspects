@@ -16,7 +16,6 @@ class Prospect: Identifiable, Codable {
 
 @MainActor class Prospects: ObservableObject {
     @Published private(set) var people: [Prospect]
-//    let saveKey = "SavedData"
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedProspects")
     
     init() {
