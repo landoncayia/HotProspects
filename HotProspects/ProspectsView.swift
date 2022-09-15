@@ -46,6 +46,12 @@ struct ProspectsView: View {
                         }
                     }
                     .swipeActions {
+                        Button(role: .destructive) {
+                            prospects.remove(prospect)
+                        } label: {
+                            Label("Delete", systemImage: "trash")
+                        }
+                        
                         if prospect.isContacted {
                             Button {
                                 prospects.toggle(prospect)

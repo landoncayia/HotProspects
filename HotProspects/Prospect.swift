@@ -11,6 +11,7 @@ class Prospect: Identifiable, Codable {
     var id = UUID()
     var name = "Anonymous"
     var emailAddress = ""
+//    private(set) var timeAdded = Date.now
     fileprivate(set) var isContacted = false
 }
 
@@ -38,6 +39,11 @@ class Prospect: Identifiable, Codable {
     
     func add(_ prospect: Prospect) {
         people.append(prospect)
+        save()
+    }
+    
+    func remove(_ prospect: Prospect) {
+        people.removeAll(where: { $0.id == prospect.id })
         save()
     }
     
