@@ -12,6 +12,7 @@
 		C766A8EB28CA789D00D88927 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C766A8EA28CA789D00D88927 /* ContentView.swift */; };
 		C766A8ED28CA789E00D88927 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C766A8EC28CA789E00D88927 /* Assets.xcassets */; };
 		C766A8F028CA789E00D88927 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C766A8EF28CA789E00D88927 /* Preview Assets.xcassets */; };
+		C774C7FB28D370A10000B7DF /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774C7FA28D370A10000B7DF /* FileManager-DocumentsDirectory.swift */; };
 		C78A61AF28CF9BC800809B72 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C78A61AC28CF9BC800809B72 /* README.md */; };
 		C78A61B028CF9BC800809B72 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C78A61AE28CF9BC800809B72 /* .gitignore */; };
 		C78A61B228CF9CBD00809B72 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78A61B128CF9CBD00809B72 /* ProspectsView.swift */; };
@@ -26,6 +27,7 @@
 		C766A8EA28CA789D00D88927 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C766A8EC28CA789E00D88927 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C766A8EF28CA789E00D88927 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C774C7FA28D370A10000B7DF /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		C78A61AC28CF9BC800809B72 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C78A61AE28CF9BC800809B72 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		C78A61B128CF9CBD00809B72 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				C766A8E828CA789D00D88927 /* HotProspectsApp.swift */,
+				C774C7FA28D370A10000B7DF /* FileManager-DocumentsDirectory.swift */,
 				C766A8EA28CA789D00D88927 /* ContentView.swift */,
 				C78A61B528CF9FAB00809B72 /* Prospect.swift */,
 				C78A61B128CF9CBD00809B72 /* ProspectsView.swift */,
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78A61B428CF9CC200809B72 /* MeView.swift in Sources */,
+				C774C7FB28D370A10000B7DF /* FileManager-DocumentsDirectory.swift in Sources */,
 				C7B012F828D2164500A35535 /* ImageSaver.swift in Sources */,
 				C78A61B628CF9FAB00809B72 /* Prospect.swift in Sources */,
 				C78A61B228CF9CBD00809B72 /* ProspectsView.swift in Sources */,
