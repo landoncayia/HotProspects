@@ -1,6 +1,6 @@
 # HotProspects
 
-A simple iOS app, built using SwiftUI, that allows the user to track people they meet at conferences using QR codes.
+A simple iOS app, built using SwiftUI, that allows peopole to track others they meet at conferences using QR codes.
 
 ## Installing / Getting started
 
@@ -8,7 +8,11 @@ To run this project, you will need a Mac computer with the latest version of Xco
 
 ## Features
 
-
+* Scan the QR codes of other people using HotProspects to store their name and email address
+* Create a custom QR code for others to scan using your name and email address
+* Filter contacts by who has been contacted using tabs
+* Sort contacts by name or most recently added
+* Mark as contacted/uncontacted, set a reminder, or delete contacts via swipe actions
 
 ## Credit
 
@@ -32,7 +36,7 @@ The idea for this project came from Paul Hudson's *100 Days of SwiftUI*. I may e
 
 Screenshots will go here when they are ready.
 
-<!--<p float="left">-->
-<!--    <img src="screenshots/hotprospects1.png" alt="HotProspects Screenshot 1" width="341">-->
-<!--    <img src="screenshots/hotprospects2.png" alt="HotProspects Screenshot 2" width="341">-->
-<!--</p>-->
+<p float="left">
+    <img src="screenshots/hotprospects1.png" alt="Hot Prospects Screenshot 1" width="341">
+    <img src="screenshots/hotprospects2.png" alt="Hot Prospects Screenshot 2" width="341">
+</p>
